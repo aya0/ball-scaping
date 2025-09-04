@@ -1,0 +1,1 @@
+print("check that everything work right ")
