@@ -3,7 +3,7 @@ from pygame import DOUBLEBUF
 from Box2D import b2World
 
 
-
+# use the singlotone
 class Utils():
     
     def __init__(self):
