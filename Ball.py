@@ -23,8 +23,7 @@ class Ball :
         
         
     def draw_circle(self , circle , body , ficture):
-        position = utils.to_Pos(
-            body.transform * circle.pos)
+        position = utils.to_Pos(body.transform * circle.pos)
         pygame.draw.circle(utils.screen , self.color , [int(x) for x in position ] ,int(circle.radius * utils.PPM))  
         
         # find the posotion 

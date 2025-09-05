@@ -22,12 +22,12 @@ class Utils():
         
     def to_Pos(self, pos):
        """ Convert from Box2D to pygame coordintes"""
-       return (pos[0] * self.PPM , self.height -(pos[1] * self.PPM))
+       return (pos[0] * self.PPM , self.height - pos[1] * self.PPM)
    
    
     def from_Pos(self , pos):
        """ Convert from pygame to Box2D coordintes"""
-       return (pos[0] / self.PPM , self.height -(pos[1] / self.PPM))
+       return (pos[0] / self.PPM , (self.height - pos[1]) / self.PPM)
     
     
     def calDeltaTime(self):

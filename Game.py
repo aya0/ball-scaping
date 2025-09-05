@@ -2,7 +2,7 @@ from pygame import Vector2
 
 from Ball import Ball
 from Ring import Ring
-from utils import utils
+from Utils import utils
 
 
 class Game:
