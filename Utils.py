@@ -3,6 +3,7 @@ from pygame import DOUBLEBUF
 from Box2D import b2World
 
 
+
 class Utils():
     
     def __init__(self):
@@ -17,9 +18,7 @@ class Utils():
         self.PPM =10.0 # pixcles per meter
         self.world = b2World(gravity=(0,-20) , doSleep=True)
         
-        
-        
-        
+
         
     def to_Pos(self, pos):
        """ Convert from Box2D to pygame coordintes"""
@@ -38,6 +37,9 @@ class Utils():
     def deltaTime(self):
         return self.dt
     
+    
+    
+utils =Utils()    
     
     
                 
