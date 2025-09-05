@@ -27,7 +27,7 @@ class Ball :
             body.transform * circle.pos)
         pygame.draw.circle(utils.screen , self.color , [int(x) for x in position ] ,int(circle.radius * utils.PPM))  
         
-        
+        # find the posotion 
     def getPos(self):
         p = utils.to_Pos(self.circle_body.position) 
         return Vector2(p[0] , p[1])    
